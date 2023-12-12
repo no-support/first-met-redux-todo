@@ -17,7 +17,7 @@ const todoSlice = createSlice({
       state.boardTodosMap[targetBoardId].push({
         id: state.boardTodosMap[targetBoardId].length + 1,
         title: newTodo,
-        isFinite: false,
+        isFinished: false,
       });
     },
     toggleFinishTodo: (state, action) => {
